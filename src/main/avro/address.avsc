@@ -1,0 +1,134 @@
+{
+  "namespace": "io.sadev.dires.address.management.registration",
+  "type": "record",
+  "name": "AddressDto",
+  "fields": [
+    {
+      "name": "addressId",
+      "type": [
+        "long",
+        "null"
+      ]
+    },
+    {
+      "name": "country",
+      "type": {
+        "type": "record",
+        "name": "CountryDto",
+        "fields": [
+          {
+            "name": "countryId",
+            "type": [
+              "int",
+              "null"
+            ]
+          },
+          {
+            "name": "indicator",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          {
+            "name": "code",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          {
+            "name": "description",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "city",
+      "type": {
+        "type": "record",
+        "name": "CityDto",
+        "fields": [
+          {
+            "name": "cityId",
+            "type": [
+              "long",
+              "null"
+            ]
+          },
+          {
+            "name": "description",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          {
+            "name": "postalCode",
+            "type": [
+              "int",
+              "null"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "street",
+      "type": "string"
+    },
+    {
+      "name": "houseNumber",
+      "type": "int"
+    },
+    {
+      "name": "floor",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "geoCoordinates",
+      "type": {
+        "namespace": "io.sadev.dires.address.management.registration",
+        "type": "record",
+        "name": "GeoCoordinatesDto",
+        "fields": [
+          {
+            "name": "latitude",
+            "type": [
+              "double",
+              "null"
+            ]
+          },
+          {
+            "name": "longitude",
+            "type": [
+              "double",
+              "null"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "restaurantId",
+      "type": [
+        "long",
+        "null"
+      ]
+    },
+    {
+      "name": "additionalAddressInformation",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  ]
+}
