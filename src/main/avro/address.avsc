@@ -1,5 +1,5 @@
 {
-  "namespace": "io.sadev.dires.address.management.registration",
+  "namespace": "io.sadev.dires.dto.address",
   "type": "record",
   "name": "AddressDto",
   "fields": [
